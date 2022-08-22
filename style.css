@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.nav{
+    background-color: #a1b5cb;
+    text-align: end;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+.logo{
+    float:left;
+    width:100px;
+    height: 63px;
+    background-color: #a1b5cb;
+}
+.banner{
+    height:500px;
+    z-index: -1;
+    width: 100%;
+    height: 80%;
+    padding-left: 0%;
+}
+.perfil{
+    position: relative;
+    z-index: 1;
+    
+}
+.card1{
+    padding-top: 10px;
+}
+.card{
+    margin-left: 80px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+h2{
+    padding-top: 40px;
+}
+.porcentaje{
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+}
+.container{
+    position: relative;
+    width: 960px;
+    display: flex;
+    justify-content: space-around;
+}
+.container .card2{
+    position: relative;
+    width: 250px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 23px;
+}
+.container .card2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+.container .card2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    pointer-events: none;
+    z-index: 1;
+}
+.porcent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0  50px #fff;
+    background: rgb(255,255,255);
+    z-index: 1000;
+}
+.porcent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.porcent .number h3{
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+    transition: 0.5s;
+}
+.card2:hover .porcent .number h3{
+    color: rgb(0,0,0);
+    font-size: 45px;
+}
+.porcent .number h3 span{
+    color: rgb(0,0,0);
+}
+.text{
+    position: relative;
+    color: rgb(0,0,0);
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-85deg)!important;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round !important;
+    transform: translate(5px, 5px);
+}
+
+.color1{
+    stroke: blueviolet;
+}
+.color2{
+    stroke: chocolate;
+}
+.color3{
+    stroke: darkblue;
+}
+.color4{
+    stroke: crimson;
+}
+.color5{
+    stroke: darkorange;
+}
+.color6{
+    stroke: aquamarine;
+}
+
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.card2:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(20%);
+    stroke: rgb(255,0,0);
+}
+.card2:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440*40)/100);
+    stroke: rgb(255,0,0);
+}
+.card2:nth-child(3) svg circle:nth-child(3){
+    stroke-dashoffset: calc(440 - (440*40)/100);
+    stroke: rgb(255,0,0);
+}
+.proyecto{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.btn{
+    background-color: #a1b5cb;
+    margin-left: 40px;
+}
+footer{
+    margin-top: 100px;
+    font-size: 10px;
+    background-color: #a1b5cb;
+    text-align: end;
+    font-weight: bolder;
+}
